@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+/* Contact Cards Section */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f1f3f5;
+}
+
+.card {
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header with Circular Image */
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #343a40;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #343a40;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #0056b3;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact h1 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p, .card a {
+        font-size: 14px;
+    }
+}

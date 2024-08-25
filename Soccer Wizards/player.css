@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Players Section */
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f1f3f5;
+}
+
+/* Player Card */
+.player-card {
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.player-photo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.player-card h3 {
+    font-size: 24px;
+    color: #343a40;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.player-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Player Rating */
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .player-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .players {
+        padding: 20px;
+    }
+
+    .player-photo {
+        height: 150px;
+    }
+
+    .player-card h3 {
+        font-size: 20px;
+    }
+
+    .player-card p {
+        font-size: 14px;
+    }
+
+    .rating p {
+        font-size: 14px;
+    }
+}

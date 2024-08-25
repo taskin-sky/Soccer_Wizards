@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.home p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Trophy Section */
+.trophy-section {
+    padding: 50px 20px;
+    background-color: #f1f3f5;
+    text-align: center;
+}
+
+.trophy-section h2 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.trophy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.trophy-img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+.trophy-info {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: auto;
+}
+
+.trophy-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trophy-container {
+        flex-direction: column;
+    }
+
+    .trophy-section h2 {
+        font-size: 28px;
+    }
+
+    .trophy-info p {
+        font-size: 16px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home p {
+        font-size: 18px;
+    }
+}
